@@ -1,7 +1,6 @@
-from scripts.helpful_scripts import get_account, SimpleCollectible
+from scripts.helpful_scripts import get_account, SimpleCollectible, OPENSEA_URL
 
 sample_token_uri = "https://ipfs.io/ipfs/QmVthzYxEHmjMdkhsCqVPUzurAtJAKW88HtapFnetBTHVX?filename=st-bernard.json"
-OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"
 
 
 def deploy_and_create():
