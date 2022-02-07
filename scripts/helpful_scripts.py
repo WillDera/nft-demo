@@ -77,13 +77,13 @@ def get_contract(contract_name):
     return contract
 
 
-# def get_publish_source():
-#     if network.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS or not os.getenv(
-#         "ETHERSCAN_TOKEN"
-#     ):
-#         return False
-#     else:
-#         return True
+def get_publish_source():
+    if network.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS or not os.getenv(
+        "ETHERSCAN_TOKEN"
+    ):
+        return False
+    else:
+        return True
 
 
 def get_breed(breed_number):
@@ -103,13 +103,13 @@ def fund_with_link(
     return tx
 
 
-# def get_verify_status():
-#     verify = (
-#         config["networks"][network.show_active()]["verify"]
-#         if config["networks"][network.show_active()].get("verify")
-#         else False
-#     )
-#     return verify
+def get_verify_status():
+    verify = (
+        config["networks"][network.show_active()]["verify"]
+        if config["networks"][network.show_active()].get("verify")
+        else False
+    )
+    return verify
 
 
 def deploy_mocks(decimals=18, initial_value=2000):
